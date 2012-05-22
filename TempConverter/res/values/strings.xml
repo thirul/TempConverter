@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="app_name">Temperature Converter</string>
+    <string name="lblTitle">Temperature Converter</string>
+    <string name="lblConvert">Convert To:</string>
+    <string name="lblCelcius">Celsius</string>
+    <string name="lblFehrenheit">Fahrenheit</string>
+    <string name="lblEnterTemp">Enter Temperature:</string>
+    <string name="lblGo">Go</string>
+    <string name="lblResult">Result</string>    
+
+</resources>

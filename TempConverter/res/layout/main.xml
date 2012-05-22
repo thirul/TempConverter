@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <TextView
+        android:id="@+id/btnButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblConvert"
+        android:layout_marginTop="13dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+ 
+   
+          <RadioGroup
+        android:id="@+id/rgTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnButton1"
+        android:orientation="horizontal"
+        >
+        
+        <RadioButton 
+            android:id ="@+id/rdCelcius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text ="@string/lblCelcius"
+                        
+            />
+          
+        <RadioButton 
+            android:id ="@+id/rdFarhenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:text ="@string/lblFehrenheit"
+            
+            
+            />
+                      
+         </RadioGroup>
+ 
+ <TextView
+        android:id="@+id/lblEnterTempId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text ="@string/lblEnterTemp"        
+        android:layout_below="@+id/btnButton1"
+        android:layout_marginTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+    
+
+    <EditText
+        android:id="@+id/txtTemp"
+        android:layout_width="70dp"
+        android:layout_height="38dp"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@+id/lblEnterTempId" 
+        android:layout_below="@+id/rgTemp" />
+    
+	<Button
+	    android:id="@+id/btnGo"
+	    android:layout_width="70dp"
+        android:layout_height="35dp"
+	    android:text="@string/lblGo"
+	    android:onClick="onClickGo"
+	    android:layout_below="@+id/rgTemp"
+	    android:layout_toRightOf="@+id/txtTemp" />    
+ 
+	
+	<TextView 
+	    android:id="@+id/lblResult"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Result"
+	    android:layout_below="@+id/lblEnterTempId"
+	    android:layout_marginTop="25dp"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    
+	    />
+</RelativeLayout>
